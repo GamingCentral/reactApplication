@@ -3,6 +3,10 @@
 }
 .brand{
     padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
 }
 .logo{
     width: 30px;
@@ -30,14 +34,14 @@
 .avatarContainer {
     display: flex;
     justify-content: flex-end;
-    margin-left: 16px; /* Add some space between the button group and the avatar */
+    margin-left: 2px; /* Add some space between the button group and the avatar */
 }
 
 .switchContainer {
     width: 90px;
     border-radius: 30px;
     padding: 0;
-    margin-left: 30px;
+    margin-left: 25px;
      /* Center the content inside the switch container */
     padding: 1%;
     transition: ease-in-out;
@@ -52,6 +56,9 @@
     align-items: center;
     border: 2px solid;
     flex-shrink: 0;
+}
+.nameOfComp{
+    font-size: x-large !important;
 }
 
 /* Media query for smaller screens */
@@ -77,4 +84,20 @@
     .drawerContainer {
       width: 200px;
     }
+}
+@media (max-width: 567px) {
+    .brand{
+        padding-left: 3px;
+    }
+    
+}
+@media (max-width: 425px) {
+    .brand{
+        padding-left: 10px;
+        font-size: small;
+    }
+    .nameOfComp{
+        display: none !important;
+    }
+
 }

@@ -2,7 +2,6 @@ import React from "react";
 import '../../css/navbar.css';
 import PersonAddDisabledIcon from '@mui/icons-material/PersonAddDisabled';
 import PersonAdd from '@mui/icons-material/PersonAdd';
-import { Person } from "@mui/icons-material";
 
 function OnlineAvatar({ switchStyle, onClickAvatar }) {
     return (

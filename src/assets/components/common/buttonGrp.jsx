@@ -3,18 +3,21 @@ import { ButtonGroup } from "@mui/material";
 import Button from "@mui/material/Button";
 import SettingsIcon from '@mui/icons-material/SettingsOutlined';
 import NotificationsIcon from '@mui/icons-material/NotificationsNone';
-import Switch from "@mui/material/Switch";
-import { styled } from '@mui/material/styles';
 import '../../css/navbar.css'
 import OnlineAvatar from '../common/onlineAvatar';
+import Badge from "@mui/material/Badge";
 
 
 function MenuGroupButtons({switchStyle,onClickAvatar}) {
     return (
         <div className="menuGroupContainer">
             <ButtonGroup disableRipple variant="text" aria-label="Small button group" className="flexItem">
-                <Button><NotificationsIcon sx={{ mx: 2 }} /></Button>
-                <Button><SettingsIcon sx={{ mx: 2 }} /></Button>
+                <Button  sx={{ mx: 2 }}>
+                    <Badge variant="dot" color="secondary" overlap="circular"> <NotificationsIcon/> </Badge> 
+                </Button>
+                <Button  sx={{ mx: 2 }}>
+                    <SettingsIcon />
+                </Button>
             </ButtonGroup>
             <div className="flexItem avatarContainer">
                 <OnlineAvatar switchStyle={switchStyle} onClickAvatar={onClickAvatar} />

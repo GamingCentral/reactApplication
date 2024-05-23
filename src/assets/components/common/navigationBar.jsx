@@ -7,7 +7,6 @@ import { useState } from "react";
 import Button from "@mui/material/Button";
 import MenuIcon from "@mui/icons-material/Menu";
 import { styled } from '@mui/material/styles';
-import CloseIcon from '@mui/icons-material/Close';
 import DrawerCustom from "../common/drawerMain";
 
 const MenuButtonStyled = styled(Button)`
@@ -54,7 +53,7 @@ function NavBar() {
             <MenuButtonStyled variant="outlined" disableElevation onClick={toggleDrawer}>
                 <MenuIconStyledOpen />
             </MenuButtonStyled>
-            <a href="#" className="brand"><LogoDevIcon fontSize="large"/></a>   
+            <a href="#" className="brand"><LogoDevIcon className="logoCompany" fontSize="large"/><span className="nameOfComp" style={{fontSize: 'x-large',marginLeft: 3}}>Cure Assist</span></a>   
             <div style={{ marginLeft: 'auto' }}>
                 <MenuGroupButtons switchStyle={switchStyle} onClickAvatar={onClickAvatar}/>
             </div>
