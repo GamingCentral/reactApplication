@@ -1,0 +1,80 @@
+.css-iv8nej-MuiButtonGroup-root .MuiButtonGroup-firstButton, .css-iv8nej-MuiButtonGroup-root .MuiButtonGroup-middleButton {
+    border-right: 0 !important;
+}
+.brand{
+    padding-left: 50px;
+}
+.logo{
+    width: 30px;
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    padding: 1% 2%;
+}
+.menuGroupContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: stretch;
+    width: 100%;
+    padding: 0 16px; /* Add some padding for better responsiveness */
+}
+
+.flexItem {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.avatarContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 16px; /* Add some space between the button group and the avatar */
+}
+
+.switchContainer {
+    width: 90px;
+    border-radius: 30px;
+    padding: 0;
+    margin-left: 30px;
+     /* Center the content inside the switch container */
+    padding: 1%;
+    transition: ease-in-out;
+} 
+
+.avatarButton {
+    width: 40%;
+    height: 100%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    flex-shrink: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .menuGroupContainer {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .flexItem, .avatarContainer {
+        width: 100%; 
+        justify-content: center; 
+        margin-left: 0; 
+        margin-bottom: 16px; 
+        flex-shrink: 0;
+    }
+
+    .switchContainer {
+        margin-left: 0; 
+    }
+}
+@media (max-width: 768px) {
+    .drawerContainer {
+      width: 200px;
+    }
+}
